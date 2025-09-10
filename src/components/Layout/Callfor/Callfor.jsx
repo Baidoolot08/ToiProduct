@@ -39,10 +39,10 @@ const Callfor = () => {
               </p>
               <h1>Биз сиздерди күтөбүз!</h1>
               <div className="callfor--box__text--imganima">
-                <i >
-                <CiHeart className="icon" />
-              </i>
-              <img src={august} alt="Август месяц" />
+                <i>
+                  <CiHeart className="icon" />
+                </i>
+                <img src={august} alt="Август месяц" />
               </div>
             </div>
           </div>

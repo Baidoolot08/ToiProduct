@@ -27,9 +27,18 @@ const Time = () => {
         return;
       }
 
-      const days = String(Math.floor(diff / 1000 / 60 / 60 / 24)).padStart(2, "0");
-      const hours = String(Math.floor((diff / 1000 / 60 / 60) % 24)).padStart(2, "0");
-      const minutes = String(Math.floor((diff / 1000 / 60) % 60)).padStart(2, "0");
+      const days = String(Math.floor(diff / 1000 / 60 / 60 / 24)).padStart(
+        2,
+        "0"
+      );
+      const hours = String(Math.floor((diff / 1000 / 60 / 60) % 24)).padStart(
+        2,
+        "0"
+      );
+      const minutes = String(Math.floor((diff / 1000 / 60) % 60)).padStart(
+        2,
+        "0"
+      );
       const seconds = String(Math.floor((diff / 1000) % 60)).padStart(2, "0");
 
       setTimeLeft({ days, hours, minutes, seconds });
@@ -41,7 +50,7 @@ const Time = () => {
   // Анимация появления блока, когда он в видимости
   useEffect(() => {
     const observer = new IntersectionObserver(
-      entries => {
+      (entries) => {
         entries.forEach((entry, index) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("show");
@@ -52,9 +61,9 @@ const Time = () => {
     );
 
     const elements = document.querySelectorAll(".time--flex__count");
-    elements.forEach(el => observer.observe(el));
+    elements.forEach((el) => observer.observe(el));
 
-    return () => elements.forEach(el => observer.unobserve(el));
+    return () => elements.forEach((el) => observer.unobserve(el));
   }, []);
 
   return (

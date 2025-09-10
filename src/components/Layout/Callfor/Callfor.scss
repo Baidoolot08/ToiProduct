@@ -273,22 +273,20 @@
           }
 
           .icon {
-              position: absolute;
-              top: 45%;
-              left: 57%;
-              transform: translate(-50%, -50%);
-              font-size: clamp(34px, 10vw, 100px); // 👈 адаптивный размер
-              color: #e11d48;
-              z-index: 99;
-              border: 2px solid transparent;
-              border-radius: 50%;
-              padding: 4px;
-              transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
-              animation: pulse 1.5s infinite ease-in-out;
-            
-            
+            position: absolute;
+            top: 45%;
+            left: 57%;
+            transform: translate(-50%, -50%);
+            font-size: clamp(34px, 10vw, 100px); // 👈 адаптивный размер
+            color: #e11d48;
+            z-index: 99;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            padding: 4px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease,
+              border 0.3s ease;
+            animation: pulse 1.5s infinite ease-in-out;
           }
-
         }
       }
     }
