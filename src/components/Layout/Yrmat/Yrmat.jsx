@@ -1,23 +1,23 @@
-import React, { useEffect } from 'react';
-import './Yrmat.scss';
+import React, { useEffect } from "react";
+import "./Yrmat.scss";
 
 const Yrmat = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
+      (entries) => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
+            entry.target.classList.add("visible");
           }
         });
       },
       { threshold: 0.2 }
     );
 
-    const elements = document.querySelectorAll('#yrmat h1, #yrmat h2');
-    elements.forEach(el => observer.observe(el));
+    const elements = document.querySelectorAll("#yrmat h1, #yrmat h2");
+    elements.forEach((el) => observer.observe(el));
 
-    return () => elements.forEach(el => observer.unobserve(el));
+    return () => elements.forEach((el) => observer.unobserve(el));
   }, []);
 
   return (
@@ -25,7 +25,7 @@ const Yrmat = () => {
       <div className="container">
         <div className="yrmat">
           <h1>Урматтоо менен</h1>
-          <h2>Нурлан & Эльнура</h2>
+          <h2>Бегали & Миргул</h2>
         </div>
       </div>
     </div>

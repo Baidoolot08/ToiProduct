@@ -1,53 +1,5 @@
-// #hero {
-//   // background-color: #c0c0c0;
-//   // height: 100vh;
-//   .hero {
-//     h1 {
-//       text-align: center;
-//       padding: 50px 0;
-//       color: white;
-//       font-size: 60px;
-
-//       font-family: "Dancing Script", cursive;
-//       font-optical-sizing: auto;
-//       font-weight: 200;
-//       font-style: normal;
-      
-//   // font-family: "Playfair Display", serif;
-//   // font-optical-sizing: auto;
-//   // font-weight: 100;
-//   // font-style: normal;
-//     }
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-
-//     &--container {
-//       display: flex;
-//       flex-direction: column;
-//       align-items: center;
-//       gap: 40px;
-//       margin-top: 70px;
-//       padding: 20px;
-//       width: 1100px;
-//       height: 300px;
-//       border-radius: 15px;
-//       background-color: white;
-//       h1 {
-//         font-family: "Great Vibes", cursive;
-//         color: black;
-//         font-size: 60px;
-//       }
-//       h2 {
-//         font-size: 30px;
-//         color: black;
-//       }
-//     }
-//   }
-// }
 #hero {
-  margin-top: 130px;
-
+  padding: 30px 0;
   .hero {
     display: flex;
     flex-direction: column;
@@ -82,24 +34,23 @@
       width: 1100px;
       height: 480px;
       border-radius: 15px;
-      background-color: white;
+      background: rgba(53, 46, 46, 0.4); /* затемнение фона */
 
       h1,
       h2,
       h3,
       h4 {
-        color: black;
+        color: rgb(255, 255, 255);
         font-family: "Dancing Script", cursive;
         opacity: 0;
         transform: translateY(30px);
         text-align: center;
-
       }
 
       h1 {
         font-family: "Great Vibes", cursive;
         font-size: 65px;
-        color:(rgba(212, 131, 9, 0.87));
+        color: (rgba(191, 255, 0, 0.87));
       }
 
       h2 {

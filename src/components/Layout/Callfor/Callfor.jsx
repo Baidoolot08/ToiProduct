@@ -1,7 +1,7 @@
 import { CiHeart } from "react-icons/ci";
 import React, { useEffect } from "react";
 import "./Callfor.scss";
-import august from "../../../assets/image/aa.png";
+import may from "../../../assets/image/may-2026.webp";
 
 const Callfor = () => {
   useEffect(() => {
@@ -42,7 +42,7 @@ const Callfor = () => {
                 <i>
                   <CiHeart className="icon" />
                 </i>
-                <img src={august} alt="Август месяц" />
+                <img src={may} alt="Май месяц" />
               </div>
             </div>
           </div>

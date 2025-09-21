@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Hero.scss";
-
 const Hero = () => {
   const heroRef = useRef(null);
   const [visible, setVisible] = useState(false);
@@ -41,9 +40,9 @@ const Hero = () => {
               Сиздерди балдарыбыз
             </h3>
             <h1 className={visible ? "fadeInUp delay-4" : ""}>
-              Нурислам & Нурайым
+              Ербол & Бегайым
             </h1>
-            <h4 className={visible ? "fadeInUp delay-5" : ""}>01.08.2025</h4>
+            <h4 className={visible ? "fadeInUp delay-5" : ""}>15.05.2026</h4>
           </div>
         </div>
       </div>

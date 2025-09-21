@@ -11,8 +11,7 @@ const Time = () => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      const currentYear = new Date().getFullYear();
-      const targetDate = new Date(`August 01 ${currentYear} 18:00:00`);
+      const targetDate = new Date("May 15 2026 18:00:00");
       const now = new Date();
       const diff = targetDate - now;
 
@@ -47,7 +46,6 @@ const Time = () => {
     return () => clearInterval(timer);
   }, []);
 
-  // Анимация появления блока, когда он в видимости
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {

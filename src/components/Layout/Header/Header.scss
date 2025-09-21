@@ -3,24 +3,22 @@
   padding: 15px 0;
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
-  // font-weight: 100;
   font-style: normal;
   display: flex;
   align-items: center;
   .header {
-    // display: flex;
     align-items: center;
-    padding:0 50px ;
-    a{
+    padding: 0 50px;
+    a {
       font-size: 30px;
+      color: rgb(0, 0, 0);
     }
     &--nav {
       align-items: center;
       justify-content: flex-end;
-      // gap: 40px;
       a {
         font-size: 24px;
-        color: black;
+        color: rgb(0, 0, 0);
       }
     }
   }
